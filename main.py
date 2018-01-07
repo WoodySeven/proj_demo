@@ -26,7 +26,9 @@ if __name__ == '__main__':
         runner.run(suite)
         logging.info("测试顺利结束^_^ ")
     except Exception:
+        """print_exc() 把异常输出到屏幕上，而format_exc() 把异常返回成字符串"""
         traceback.print_exc()
+        logging.error(traceback.format_exc())
         logging.error("测试异常终止")
     finally:
         if fp is not None:

@@ -15,3 +15,10 @@
 2018-01-07 16:50:10,708 - admin_login_logout.py:48 - INFO - admin_login_logout - test_admin_login_test - ./screenshots/mypic_2018-01-07 16-50-10.png
 2018-01-07 16:50:10,708 - admin_login_logout.py:49 - INFO - admin_login_logout - test_admin_login_test - test_admin_login_test end....
 2018-01-07 16:50:10,709 - main.py:27 - INFO - main - <module> - 测试顺利结束^_^ 
+2018-01-07 17:01:49,926 - main.py:14 - INFO - main - <module> - 本次测试开始执行，以下是详细日志
+2018-01-07 17:01:49,927 - main.py:30 - ERROR - main - <module> - Traceback (most recent call last):
+  File "F:/GitHub/WoodySeven/proj_demo/main.py", line 20, in <module>
+    fp = open('reports/report_bugfree_{0}.html'.format(time.strftime("%Y-%m-%d %H-%M-%S")), 'wb')
+FileNotFoundError: [Errno 2] No such file or directory: 'reports/report_bugfree_2018-01-07 17-01-49.html'
+
+2018-01-07 17:01:49,927 - main.py:31 - ERROR - main - <module> - 测试异常终止
