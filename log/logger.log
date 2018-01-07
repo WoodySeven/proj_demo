@@ -1,0 +1,2 @@
+2018-01-07 16:14:01,625 - main.py:14 - INFO - main - <module> - 本次测试开始执行，以下是详细日志
+2018-01-07 16:14:01,630 - main.py:29 - ERROR - main - <module> - None

@@ -1,3 +1,4 @@
+import logging
 import unittest
 import time
 import ddt
@@ -19,6 +20,7 @@ class Bugfree管理员登录退出(unittest.TestCase):
         self.driver.implicitly_wait(30)
         self.base_url = "http://localhost"
         driver = self.driver
+        logging.info("打开浏览器成功")
 
     def tearDown(self):
         pass
@@ -27,6 +29,7 @@ class Bugfree管理员登录退出(unittest.TestCase):
     @ddt.data(*test_data)
     def test_admin_login_test(self, admin, password, flag):
         """admin的登录的所有测试用例"""
+        logging.info("test_admin_login_test start....")
         driver = self.driver
         driver.get(self.base_url + "/bugfree/index.php/site/login")
         driver.find_element_by_id("LoginForm_username").clear()
@@ -37,6 +40,7 @@ class Bugfree管理员登录退出(unittest.TestCase):
         driver.find_element_by_id("SubmitLoginBTN").click()
         time.sleep(3)
         self.assertIn(flag, driver.page_source)
+        logging.critical("test_admin_login_test end....")
 
 
 if __name__ == '__main__':
