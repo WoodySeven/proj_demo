@@ -3,7 +3,7 @@ import unittest
 import time
 import ddt
 from selenium import webdriver
-
+from lib.utils import capture_screen
 
 test_data = [['admin', '123456', '退出'],
              ['invalid', '123456', '用户名不存在'],
@@ -40,7 +40,13 @@ class Bugfree管理员登录退出(unittest.TestCase):
         driver.find_element_by_id("SubmitLoginBTN").click()
         time.sleep(3)
         self.assertIn(flag, driver.page_source)
-        logging.critical("test_admin_login_test end....")
+        logging.info("test data is : {}, {}, {}".format(admin, password, flag))
+        pic_path = capture_screen(driver)
+        if pic_path is None:
+            logging.error("截图不成功")
+        else:
+            logging.info(pic_path)
+        logging.info("test_admin_login_test end....")
 
 
 if __name__ == '__main__':

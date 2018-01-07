@@ -1,2 +1,17 @@
-2018-01-07 16:14:01,625 - main.py:14 - INFO - main - <module> - 本次测试开始执行，以下是详细日志
-2018-01-07 16:14:01,630 - main.py:29 - ERROR - main - <module> - None
+2018-01-07 16:49:48,471 - main.py:14 - INFO - main - <module> - 本次测试开始执行，以下是详细日志
+2018-01-07 16:49:50,547 - admin_login_logout.py:23 - INFO - admin_login_logout - setUp - 打开浏览器成功
+2018-01-07 16:49:50,548 - admin_login_logout.py:32 - INFO - admin_login_logout - test_admin_login_test - test_admin_login_test start....
+2018-01-07 16:49:56,394 - admin_login_logout.py:43 - INFO - admin_login_logout - test_admin_login_test - test data is : admin, 123456, 退出
+2018-01-07 16:49:56,774 - admin_login_logout.py:48 - INFO - admin_login_logout - test_admin_login_test - ./screenshots/mypic_2018-01-07 16-49-56.png
+2018-01-07 16:49:56,774 - admin_login_logout.py:49 - INFO - admin_login_logout - test_admin_login_test - test_admin_login_test end....
+2018-01-07 16:49:58,457 - admin_login_logout.py:23 - INFO - admin_login_logout - setUp - 打开浏览器成功
+2018-01-07 16:49:58,457 - admin_login_logout.py:32 - INFO - admin_login_logout - test_admin_login_test - test_admin_login_test start....
+2018-01-07 16:50:03,418 - admin_login_logout.py:43 - INFO - admin_login_logout - test_admin_login_test - test data is : invalid, 123456, 用户名不存在
+2018-01-07 16:50:03,750 - admin_login_logout.py:48 - INFO - admin_login_logout - test_admin_login_test - ./screenshots/mypic_2018-01-07 16-50-03.png
+2018-01-07 16:50:03,750 - admin_login_logout.py:49 - INFO - admin_login_logout - test_admin_login_test - test_admin_login_test end....
+2018-01-07 16:50:05,641 - admin_login_logout.py:23 - INFO - admin_login_logout - setUp - 打开浏览器成功
+2018-01-07 16:50:05,641 - admin_login_logout.py:32 - INFO - admin_login_logout - test_admin_login_test - test_admin_login_test start....
+2018-01-07 16:50:10,398 - admin_login_logout.py:43 - INFO - admin_login_logout - test_admin_login_test - test data is : , 123456, 不可为空白
+2018-01-07 16:50:10,708 - admin_login_logout.py:48 - INFO - admin_login_logout - test_admin_login_test - ./screenshots/mypic_2018-01-07 16-50-10.png
+2018-01-07 16:50:10,708 - admin_login_logout.py:49 - INFO - admin_login_logout - test_admin_login_test - test_admin_login_test end....
+2018-01-07 16:50:10,709 - main.py:27 - INFO - main - <module> - 测试顺利结束^_^ 
