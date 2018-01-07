@@ -3,7 +3,7 @@ import time
 from selenium import webdriver
 
 
-class BugfreeAdminLoginLogout(unittest.TestCase):
+class Bugfree管理员登录退出(unittest.TestCase):
     """
     演示的是bugfree的登录和退出
     """
@@ -17,6 +17,7 @@ class BugfreeAdminLoginLogout(unittest.TestCase):
         pass
 
     def test_admin_login(self):
+        """admin的登录正确用例"""
         driver = self.driver
         driver.get(self.base_url + "/bugfree/index.php/site/login")
         driver.find_element_by_id("LoginForm_username").clear()
